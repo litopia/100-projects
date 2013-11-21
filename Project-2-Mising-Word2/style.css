@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*default style*/
+html{
+	position: relative;
+}
+
+#teaser{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 1px;
+	height: 100%;	
+}
+
+iframe, .mainNav{
+	height: 100%;	
+	width: 250px;
+	border-top: none;
+	border-bottem: none;
+	overflow: hidden;
+}
+
+body{
+	background-color: #263248; 	
+	font-family: 'Oxygen', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	color: #ddd;
+	width: 100%;
+}
+
+#nav{
+	position: fixed;
+	top: 20px;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	display: block;
+	border-top: rgb(200, 200, 200) 1pt solid;
+	border-bottom: rgb(200, 200, 200) 1pt solid;
+	border-left: rgb(200, 200, 200) 1pt solid;
+	opacity: 0.6;
+	cursor: pointer;
+	background-color: #0379ec;
+	z-index: 1000;
+}
+
+#nav:hover{
+	opacity: 0.9;	
+}
+
+#logo{
+	width: 25px;
+	margin: 0 auto;
+	position: relative;
+	padding-left: 7.5px;
+	padding-top: 4px;
+}
+
+button{
+	background-color:rgba(58, 150, 240, 0.5);
+	-webkit-border-top-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	-moz-border-radius-topright:3px;
+	border-top-right-radius:3px;
+	-webkit-border-bottom-right-radius:3px;
+	-moz-border-radius-bottomright:3px;
+	border-bottom-right-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-bottom-left-radius:3px;
+	text-indent:0;
+	border:1px solid #0379ec;
+	display:inline-block;
+	color:#eee;
+	width: 150px;
+	position: relative;
+	display: inline-block;
+	margin: 15px 0;
+	font-size:15px;
+	height:40px;
+	line-height:40px;
+	text-decoration:none;
+	text-align:center;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}button:hover {
+	background-color:rgba(58, 150, 240, 1);
+}
+
+/*default style for files*/
+
+/*for container*/
+#container{
+	margin: 70px auto;
+	width: 300px;
+	font-size: 1.5em;
+	line-height: 1.4em;
+	text-align: left;
+}
+
+div.border{
+	border-top: 1px solid rgba(250, 250, 250, 0.5);
+	border-bottom: 4px solid rgba(250, 250, 250, 0.5);
+	width: 192px;
+	height: 2px;
+	margin-top: 18px;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+span.quote{
+	font-size: 0.8em;
+	opacity: 0.7;
+	margin-top: 15px;
+}
+
+input{
+	background-color: #263248;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	font-size: 1em;
+	color: #ddd;
+	font-family:"oxygen", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+input:focus{
+	outline: none;	
+}
+
+#input1{
+	width: 65px;	
+}
+
+#input2{
+	width: 72px;	
+}
+
+#input3{
+	width: 130px;
+}
+
+#container > p{
+	margin: 0px;
+	margin-bottom: 5px;	
+}
+
+
