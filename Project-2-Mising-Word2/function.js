@@ -12,10 +12,10 @@
 	})
 	
 	
-	var answer = ["dwell","dream", "concentrate"];
+	var answer = ["dwell","dream", "Concentrate"];
 	$(".input").keyup(function(event){
 		if(event.which === 13){
-			var input = $(this).val();
+			var input = $(this).val().toLowerCase();
 			var current = event.currentTarget.id;
 			var number = parseInt(current[5]);
 			checkAnswer(input, current, number);
@@ -27,7 +27,7 @@
 		//windown.currentIndex = 0;
 		var add;
 		var a = answer[number - 1];
-		if( input === a){
+		if( input === a.toLowerCase()){
 			$(".target" + "."+current).append(a).hide().show("slow");
 			$("#" + current).css("display", "none");
 		}else{
@@ -36,7 +36,7 @@
 				//first = a[0];
 				add = $("<span>" + first.toUpperCase() + "</span>").hide().show("slow")
 				$(".target" + "." + current).append(add);
-				$("#" + current).css("width", a.length*10 + "px");
+				$("#" + current).css("width", a.length*12 + "px");
 				$("#" + current).val('');
 				a = a.substring(1);
 				answer[number-1] = a;
