@@ -185,3 +185,16 @@ td.cell{
 	font-weight: 400;	
 }
 
+@media (max-width: 700px){
+	#header > #scoreBoard {
+		  display: block;
+		  right: auto;
+		  position: relative;
+		  bottom: auto;
+    }
+	
+	#header > h2{
+		display: block;	
+	}
+
+}
